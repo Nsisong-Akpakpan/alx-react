@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './logo.jpg';
 import './App.css';
 import { getFullYear, getFooterCopy } from './utils';
@@ -12,20 +13,20 @@ export default function App() {
                 <img src={logo} alt="logo"></img>
                 <h1>School dashboard</h1>
             </header>
-            <div className="linea"></div>
+            <div className="divider"></div>
             <div className="App-body">
                 <p>Login to access the full dashboard</p>
                 <label htmlFor="Email">Email: </label>
                 <input type="email" id="Email" name="Email"/>
-                <label htmlFor="Password"> Password: </label>
+                <label id="appLabel2"  htmlFor="Password"> Password: </label>
                 <input type="password" id="Password" name="Password"/>
-                <button>Ok</button>
+                <button >Ok</button>
+         
             </div>
-            <div className="linea"></div>
+            <div className="divider"></div>
             <footer className="App-footer">
                 <p>Copyright {year} - {getFooter}</p>
             </footer>
         </div>
     );
 }
-  
