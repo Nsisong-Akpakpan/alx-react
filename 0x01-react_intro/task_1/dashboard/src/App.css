@@ -1,0 +1,42 @@
+.App-header {
+  color: #c7254e;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.App-header h1 {
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.9em;
+  font-weight: bold;
+}
+
+.App-header img {
+  width: 200px;
+}
+
+.App-body {
+  height: 550px;
+  padding-top: 50px;
+  padding-left: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App-body p{
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.732);
+
+}
+
+.App-footer {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.732);
+}
+
+.linea {
+  background-color: #c7254e;
+  height: 4px;
+}
