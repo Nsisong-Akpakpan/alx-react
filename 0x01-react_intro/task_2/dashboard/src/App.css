@@ -1,0 +1,63 @@
+.App-header {
+  color: #c7254e;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.App-header h1 {
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.9em;
+  font-weight: bold;
+}
+
+.App-header img {
+  width: 200px;
+}
+
+.App-body {
+  height: 550px;
+  padding-top: 50px;
+  padding-left: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App-body p{
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.732);
+
+}
+
+.App-body label{
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.732);
+
+}
+
+.App-body button{
+  background-color: white;
+  border: 1px solid grey;
+  font-weight: 780;
+  color: rgba(0, 0, 0, 0.732);
+  margin-left: 13px;
+
+}
+
+#appLabel2{
+  margin-left: 10px;
+}
+
+
+
+.App-footer {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.732);
+}
+
+.divider {
+  background-color: #c7254e;
+  height: 4px;
+}
