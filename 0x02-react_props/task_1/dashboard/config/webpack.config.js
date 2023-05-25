@@ -1,51 +1,46 @@
 const path = require('path');
 
-
 module.exports = {
-  mode: 'production',
   entry: './src/index.js',
   output: {
-    path: path.resolve('./dist'),
     filename: 'bundle.js',
-  },
-  performance: {
-    maxAssetSize: 999999999999,
-    maxEntrypointSize: 999999999999
+    path: path.resolve('./dist'),
   },
   devtool: 'inline-source-map',
   devServer: {
-    static: {
-      directory: path.resolve('./dist'),
-    },
-    hot: true,
-    port: 8564
+   hot: true,
+   open: true,
   },
+  mode: 'development',
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader']
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules|bower_components/,
+        use: { 
+            loader: 'babel-loader',
+            options: { 
+                presets: ['@babel/preset-env', '@babel/preset-react']
+            } 
+        }
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/,
         use: [
           'file-loader',
           {
             loader: 'image-webpack-loader',
             options: {
-              bypassOnDebug: true,
-              disable: true
-            }
-          }
+              bypassOnDebug: true, // webpack@1.x
+              disable: true,
+            },
+          },
         ]
       },
-      {
-        test: /\.(js|jsx)$/i,
-        exclude: /node_modules/,
-        use: 'babel-loader'
-      }
     ]
   }
-
 };
