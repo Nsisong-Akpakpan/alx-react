@@ -1,18 +1,6 @@
-.App-header {
-  color: red;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.App-header h1 {
-  align-self: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.9em;
-  font-weight: bold;
-}
-
-.App-header img {
-  width: 200px;
+.divider {
+  background-color: #c7254e;
+  height: 4px;
 }
 
 .App-body {
@@ -22,13 +10,27 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-footer {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
+.App-body p{
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.732);
+
 }
 
-.linea {
-  background-color: red;
-  height: 5px;
+.App-body label{
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.732);
+
+}
+
+#appLabel2{
+  margin-left: 10px;
+}
+
+.App-body button{
+  background-color: white;
+  border: 1px solid grey;
+  font-weight: 780;
+  color: rgba(0, 0, 0, 0.732);
+  margin-left: 13px;
+
 }
